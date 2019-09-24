@@ -29,27 +29,27 @@
 <body>
   <div class="container" id="tamanhoContainer" style="margin-top:40px;">
     <h4>Formulário de Cadastro</h4>
-    <form style="margin-top:20px;">
+    <form action="_inserir_produto.php" method="post" style="margin-top:20px;">
 
       <div class="form-group">
         <label>Nº Produto</label>
-        <input type="number" class="form-control" placeholder="Insira o Nº do produto">
+        <input type="number" class="form-control" name="nrproduto" placeholder="Insira o Nº do produto" required autocomplete="off">
 
       </div>
       <div class="form-group">
         <label>Nome Produto</label>
-        <input type="text" class="form-control" placeholder="Insira o Nome do produto">
+        <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o Nome do produto" autocomplete="off" required>
 
       </div>
       <div class="form-group">
         <label>Quantidade do Produto</label>
-        <input type="number" class="form-control" placeholder="Insira a Quantidade do produto">
+        <input type="number" class="form-control" name="quantidade" placeholder="Insira a Quantidade do produto" required>
 
       </div>
 
       <div class="form-group">
         <label>Categoria</label>
-        <select class="form-control">
+        <select name="categoria" class="form-control">
           <option>Periféricos</option>
           <option>Hardware</option>
           <option>Software</option>
@@ -58,7 +58,7 @@
       </div>
       <div class="form-group">
         <label>Fornecedor</label>
-        <select class="form-control">
+        <select name="fornecedor" class="form-control">
           <option>Fornecedor A</option>
           <option>Fornecedor B</option>
           <option>Fornecedor C</option>
@@ -69,18 +69,6 @@
       </div>
     </form>
   </div>
-  <!--
-  <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-
-    <button type="button" class="btn btn-link">Link</button>
--->
 
 </body>
 
