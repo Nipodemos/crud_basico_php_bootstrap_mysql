@@ -12,6 +12,12 @@
     #tamanhoContainer {
       width: 500px;
     }
+
+    #botao {
+      background-color: #FF1168;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
   </style>
 
 
@@ -22,7 +28,8 @@
 
 <body>
   <div class="container" id="tamanhoContainer" style="margin-top:40px;">
-    <form action="">
+    <h4>Formulário de Cadastro</h4>
+    <form style="margin-top:20px;">
 
       <div class="form-group">
         <label>Nº Produto</label>
@@ -57,7 +64,9 @@
           <option>Fornecedor C</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-success btn-sm">Cadastrar</button>
+      <div style="text-align: right">
+        <button type="submit" id="botao" class="btn btn-sm">Cadastrar</button>
+      </div>
     </form>
   </div>
   <!--
