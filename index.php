@@ -33,17 +33,12 @@
 
       <div class="form-group">
         <label>Nº Produto</label>
-        <input type="number" class="form-control" name="nrproduto" placeholder="Insira o Nº do produto" required autocomplete="off">
+        <input type="number" class="form-control" name="num_produto" placeholder="Insira o Nº do produto" required autocomplete="off">
 
       </div>
       <div class="form-group">
         <label>Nome Produto</label>
-        <input type="text" class="form-control" name="nomeproduto" placeholder="Insira o Nome do produto" autocomplete="off" required>
-
-      </div>
-      <div class="form-group">
-        <label>Quantidade do Produto</label>
-        <input type="number" class="form-control" name="quantidade" placeholder="Insira a Quantidade do produto" required>
+        <input type="text" class="form-control" name="nome_produto" placeholder="Insira o Nome do produto" autocomplete="off" required>
 
       </div>
 
@@ -55,6 +50,11 @@
           <option>Software</option>
           <option>Celulares</option>
         </select>
+      </div>
+      <div class="form-group">
+        <label>Quantidade do Produto</label>
+        <input type="number" class="form-control" name="quantidade" placeholder="Insira a Quantidade do produto" required>
+
       </div>
       <div class="form-group">
         <label>Fornecedor</label>
