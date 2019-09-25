@@ -24,5 +24,6 @@ require 'codigo_bootstrap.html';
         <h4>Produto Adicionado com sucesso!</h4>
         <div style="padding-top: 20px;"></div>
         <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
+        <a href="listar_produtos.php" role="button" class="btn btn-sm btn-primary">Listar Produtos</a>
     </center>
 </div>
