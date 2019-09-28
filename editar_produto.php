@@ -1,12 +1,3 @@
-<?php
-
-echo $id = $_GET['id'];
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -35,13 +26,14 @@ echo $id = $_GET['id'];
 <body>
   <div class="container" id="tamanhoContainer" style="margin-top:40px;">
     <h4>Formulário de Edição</h4>
-    <form action="_inserir_produto.php" method="post" style="margin-top:20px;">
+    <form action="_atualizar_produto.php" method="post" style="margin-top:20px;">
       <?php
+        $id = $_GET['id'];
         $conexao = include 'conexao.php';
-        $sql = "SELECT * FROM estoque WHERE id_estoque = $id";
+        $sql = "SELECT * FROM produtos WHERE id_produto=$id";
         $result = mysqli_query($conexao, $sql);
         while ($array = mysqli_fetch_array($result)) {
-            $id_estoque   = $array['id_produto'];
+            $id_produto   = $array['id_produto'];
             $num_produto  = $array['num_produto'];
             $nome_produto = $array['nome_produto'];
             $categoria    = $array['categoria'];
@@ -51,6 +43,8 @@ echo $id = $_GET['id'];
         <label>Nº Produto</label>
         <input type="number" class="form-control" name="num_produto"
           value="<?php echo $num_produto; ?>" disabled>
+        <input type="number" class="form-control" name="id_produto"
+          value="<?php echo $id_produto; ?>" style="display:none;">
       </div>
       <div class="form-group">
         <label>Nome Produto</label>
@@ -88,7 +82,7 @@ echo $id = $_GET['id'];
       <?php
         } ?>
       <div style="text-align: right">
-        <button type="submit" id="botao" class="btn btn-sm">Cadastrar</button>
+        <button type="submit" id="botao" class="btn btn-sm">Atualizar</button>
       </div>
     </form>
   </div>

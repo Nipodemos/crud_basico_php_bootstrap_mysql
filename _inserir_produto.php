@@ -9,7 +9,7 @@ $quantidade        = $_POST['quantidade'];    // recebe o valor do atributo do f
 $fornecedor        = $_POST['fornecedor'];    // recebe o valor do atributo do formulário
 
 
-$sql = "INSERT INTO `estoque`(`num_produto`, `nome_produto`, `categoria`, `quantidade`, `fornecedor`)
+$sql = "INSERT INTO `produtos`(`num_produto`, `nome_produto`, `categoria`, `quantidade`, `fornecedor`)
         VALUES ($num_produto,'$nome_produto','$categoria',$quantidade,'$fornecedor');";
 
 $query = mysqli_query($conexao, $sql);

@@ -26,11 +26,11 @@
             <tbody>
                 <?php
                     $conexao = include 'conexao.php';
-                    $sql = "SELECT * FROM `estoque`";
+                    $sql = "SELECT * FROM `produtos`";
                     $busca = mysqli_query($conexao, $sql);
                     
                     while ($array = mysqli_fetch_array($busca)) {
-                        $id_estoque   = $array['id_produto'];
+                        $id_produto   = $array['id_produto'];
                         $num_produto  = $array['num_produto'];
                         $nome_produto = $array['nome_produto'];
                         $categoria    = $array['categoria'];
@@ -54,7 +54,7 @@
                     </td>
                     <td>
                         <a class="btn btn-warning btn-sm" style="color: black;"
-                            href="editar_produto.php?id=<?php echo $id_estoque?>"
+                            href="editar_produto.php?id=<?php echo $id_produto?>"
                             role="button"><i class="fas fa-edit"></i>&nbsp;Editar</a>
                     </td>
                 </tr>
