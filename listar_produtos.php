@@ -11,6 +11,10 @@
 <body>
     <div class="container" style="margin-top: 40px;">
         <br>
+
+        <div style="text-align: right;">
+            <a href="index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
+        </div>
         <h3>Lista de Produtos</h3>
         <table class="table">
             <thead>
