@@ -35,7 +35,7 @@
 
             <div class="form-group">
                 <label>Nome Categoria</label>
-                <input type="text" class="form-control" name="nome_categoria" placeholder="Insira o Nome da categoria" autocomplete="on" required>
+                <input type="text" class="form-control" name="nome_categoria" placeholder="Insira o Nome da categoria" autocomplete="off" required>
 
             </div>
 

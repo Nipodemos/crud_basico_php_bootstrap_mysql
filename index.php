@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="margin-top: 30px;">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Adicionar categoria</h5>

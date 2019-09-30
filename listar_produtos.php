@@ -57,7 +57,7 @@
                             <?php echo $fornecedor   ?>
                         </td>
                         <td>
-                            <a class="btn btn-warning btn-sm" style="color: black;" href="editar_produto.php?id=<?php echo $id_produto ?>" role="button"><i class="fas fa-edit"></i>&nbsp;Editar</a>
+                            <a class="btn btn-warning btn-sm" style="color: black;" href="atualizar_produto.php?id=<?php echo $id_produto ?>" role="button"><i class="fas fa-edit"></i>&nbsp;Editar</a>
                             <a class="btn btn-danger btn-sm" style="color: black;" href="deletar_produto.php?id=<?php echo $id_produto ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                         </td>
                     </tr>
