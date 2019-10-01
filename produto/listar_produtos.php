@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Listar Produtos</title>
-    <?php include 'codigo_bootstrap.html'; ?>
-    <script defer src="https://kit.fontawesome.com/9060385a42.js" crossorigin="anonymous"></script>
+    <?php include '../codigo_bootstrap.html'; ?>
 </head>
 
 <body>
@@ -19,7 +18,7 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Núm Produto</th>
+                    <th scope="col">Num Produto</th>
                     <th scope="col">Nome Produto</th>
                     <th scope="col">Categoria</th>
                     <th scope="col">Quantidade</th>
@@ -66,6 +65,7 @@
             </tbody>
         </table>
     </div>
+    <script defer src="https://kit.fontawesome.com/9060385a42.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

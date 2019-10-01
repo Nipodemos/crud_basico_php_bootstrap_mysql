@@ -20,7 +20,7 @@
     </style>
 
 
-    <?php include 'codigo_bootstrap.html'; ?>
+    <?php include '../codigo_bootstrap.html'; ?>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
         </div>
         <h4>Formulário de Cadastro</h4>
-        <form action="categoria/_inserir_categoria.php" method="post" style="margin-top:20px;">
+        <form action="_inserir_fornecedor.php" method="post" style="margin-top:20px;">
 
 
             <div class="form-group">

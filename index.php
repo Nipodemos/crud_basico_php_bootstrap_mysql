@@ -35,7 +35,16 @@
                     <div class="card-body">
                         <h5 class="card-title">Adicionar categoria</h5>
                         <p class="card-text">Opção para adicionar categorias em nosso estoque.</p>
-                        <a href="produto/inserir_categoria.php" class="btn btn-primary">Cadastrar</a>
+                        <a href="categoria/inserir_categoria.php" class="btn btn-primary">Cadastrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 30px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Adicionar fornecedor</h5>
+                        <p class="card-text">Opção para adicionar fornecedors em nosso estoque.</p>
+                        <a href="fornecedor/inserir_fornecedor.php" class="btn btn-primary">Cadastrar</a>
                     </div>
                 </div>
             </div>

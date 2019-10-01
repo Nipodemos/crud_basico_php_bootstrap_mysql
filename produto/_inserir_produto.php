@@ -14,7 +14,7 @@ $sql = "INSERT INTO `produtos`(`num_produto`, `nome_produto`, `categoria`, `quan
 
 $query = mysqli_query($conexao, $sql);
 
-require 'codigo_bootstrap.html';
+include '../codigo_bootstrap.html';
 ?>
 
 
@@ -23,7 +23,8 @@ require 'codigo_bootstrap.html';
     <center>
         <h4>Produto Adicionado com sucesso!</h4>
         <div style="padding-top: 20px;"></div>
-        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
-        <a href="produto/listar_produtos.php" role="button" class="btn btn-sm btn-primary">Listar Produtos</a>
+        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar para o início</a>
+        <a href="inserir_categoria.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
+        <a href="listar_produtos.php" role="button" class="btn btn-sm btn-primary">Listar Produtos</a>
     </center>
 </div>

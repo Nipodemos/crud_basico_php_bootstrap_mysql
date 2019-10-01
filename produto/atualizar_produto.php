@@ -19,13 +19,13 @@
   </style>
 
 
-  <?php include 'codigo_bootstrap.html'; ?>
+  <?php include '../codigo_bootstrap.html'; ?>
 </head>
 
 <body>
   <div class="container" id="tamanhoContainer" style="margin-top:40px;">
     <h4>Formulário de Edição</h4>
-    <form action="produto/_atualizar_produto.php" method="post" style="margin-top:20px;">
+    <form action="_atualizar_produto.php" method="post" style="margin-top:20px;">
       <?php
       $id = $_GET['id'];
       $conexao = include '../conexao.php';
@@ -60,7 +60,7 @@
         </div>
         <div class="form-group">
           <label>Quantidade do Produto</label>
-          <input type="number" class="form-control" name="quantidade" value="<?php echo $num_produto; ?>" required>
+          <input type="number" class="form-control" name="quantidade" value="<?php echo $quantidade; ?>" required>
 
         </div>
         <div class="form-group">

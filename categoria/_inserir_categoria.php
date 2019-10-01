@@ -8,7 +8,7 @@ $sql = "INSERT INTO `categorias`(`nome_categoria`) VALUES ('$categoria');";
 
 $query = mysqli_query($conexao, $sql);
 
-require 'codigo_bootstrap.html';
+include '../codigo_bootstrap.html';
 ?>
 
 
@@ -17,7 +17,8 @@ require 'codigo_bootstrap.html';
     <center>
         <h4>Categoria adicionada com sucesso!</h4>
         <div style="padding-top: 20px;"></div>
-        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Cadastrar nova Categoria</a>
-        <a href="categoria/listar_categorias.php" role="button" class="btn btn-sm btn-primary">Listar Categorias</a>
+        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar para o início</a>
+        <a href="inserir_categoria" role="button" class="btn btn-sm btn-primary">Cadastrar nova Categoria</a>
+        <a href="listar_categorias.php" role="button" class="btn btn-sm btn-primary">Listar Categorias</a>
     </center>
 </div>
