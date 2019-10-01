@@ -1,6 +1,6 @@
 <?php
 
-$conexao = include 'conexao.php';
+$conexao = include '../conexao.php';
 
 $num_produto       = $_POST['num_produto'];   // recebe o valor do atributo do formulário
 $nome_produto      = $_POST['nome_produto'];  // recebe o valor do atributo do formulário
@@ -23,7 +23,7 @@ require 'codigo_bootstrap.html';
     <center>
         <h4>Produto Adicionado com sucesso!</h4>
         <div style="padding-top: 20px;"></div>
-        <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
-        <a href="listar_produtos.php" role="button" class="btn btn-sm btn-primary">Listar Produtos</a>
+        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
+        <a href="produto/listar_produtos.php" role="button" class="btn btn-sm btn-primary">Listar Produtos</a>
     </center>
 </div>

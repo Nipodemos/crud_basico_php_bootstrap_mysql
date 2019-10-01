@@ -1,6 +1,6 @@
 <?php
 
-$conexao = include 'conexao.php';
+$conexao = include '../conexao.php';
 $id_produto        = $_POST['id_produto'];   // recebe o valor do atributo do formulário
 #$num_produto       = $_POST['num_produto'];   // não vai ser atualizada, portanto não vamos usar
 $nome_produto      = $_POST['nome_produto'];  // recebe o valor do atributo do formulário
@@ -16,8 +16,8 @@ include 'codigo_bootstrap.html';
     <center>
         <h3>Atualizado com sucesso</h3>
         <div style="margin-top: 10px;"></div>
-        <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
-        <a href="listar_produtos.php" role="button" class="btn btn-sm btn-primary" style="color: #fff;">Listar
+        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo item</a>
+        <a href="produto/listar_produtos.php" role="button" class="btn btn-sm btn-primary" style="color: #fff;">Listar
             Produtos</a>
     </center>
 </div>

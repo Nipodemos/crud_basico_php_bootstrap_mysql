@@ -1,6 +1,6 @@
 <?php
 
-$conexao   = include 'conexao.php';
+$conexao   = include '../conexao.php';
 $categoria = $_POST['nome_categoria'];     // recebe o valor do atributo do formulário
 
 
@@ -17,7 +17,7 @@ require 'codigo_bootstrap.html';
     <center>
         <h4>Categoria adicionada com sucesso!</h4>
         <div style="padding-top: 20px;"></div>
-        <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar nova Categoria</a>
-        <a href="listar_categorias.php" role="button" class="btn btn-sm btn-primary">Listar Categorias</a>
+        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Cadastrar nova Categoria</a>
+        <a href="categoria/listar_categorias.php" role="button" class="btn btn-sm btn-primary">Listar Categorias</a>
     </center>
 </div>

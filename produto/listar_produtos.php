@@ -13,7 +13,7 @@
         <br>
 
         <div style="text-align: right;">
-            <a href="index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
+            <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
         </div>
         <h3>Lista de Produtos</h3>
         <table class="table">
@@ -29,7 +29,7 @@
             </thead>
             <tbody>
                 <?php
-                $conexao = include 'conexao.php';
+                $conexao = include '../conexao.php';
                 $sql = "SELECT * FROM `produtos`";
                 $busca = mysqli_query($conexao, $sql);
 

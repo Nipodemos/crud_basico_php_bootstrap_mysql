@@ -27,10 +27,10 @@
     <div class="container" id="tamanhoContainer" style="margin-top:40px;">
 
         <div style="text-align: right;">
-            <a href="index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
+            <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
         </div>
         <h4>Formulário de Cadastro</h4>
-        <form action="_inserir_produto.php" method="post" style="margin-top:20px;">
+        <form action="produto/_inserir_produto.php" method="post" style="margin-top:20px;">
 
             <div class="form-group">
                 <label>Nº Produto</label>
@@ -47,7 +47,7 @@
                 <label>Categoria</label>
                 <select name="categoria" class="form-control">
                     <?php
-                    $conexao = include 'conexao.php';
+                    $conexao = include '../conexao.php';
                     $sql = 'SELECT * FROM categorias ORDER BY nome_categoria ASC';
                     $busca = mysqli_query($conexao, $sql);
 
@@ -71,7 +71,7 @@
                 <label>Fornecedor</label>
                 <select name="fornecedor" class="form-control">
                     <?php
-                    $conexao = include 'conexao.php';
+                    $conexao = include '../conexao.php';
                     $sql = 'SELECT * FROM fornecedores ORDER BY nome_fornecedor ASC';
                     $busca = mysqli_query($conexao, $sql);
 

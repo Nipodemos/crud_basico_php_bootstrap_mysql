@@ -1,6 +1,6 @@
 <?php
 
-$conexao   = include 'conexao.php';
+$conexao   = include '../conexao.php';
 $fornecedor = $_POST['nome_fornecedor'];     // recebe o valor do atributo do formulário
 
 
@@ -17,7 +17,7 @@ require 'codigo_bootstrap.html';
     <center>
         <h4>Fornecedor adicionado com sucesso!</h4>
         <div style="padding-top: 20px;"></div>
-        <a href="index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo Fornecedor</a>
-        <a href="listar_fornecedors.php" role="button" class="btn btn-sm btn-primary">Listar Fornecedors</a>
+        <a href="../index.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo Fornecedor</a>
+        <a href="fornecedor/listar_fornecedors.php" role="button" class="btn btn-sm btn-primary">Listar Fornecedors</a>
     </center>
 </div>
