@@ -29,14 +29,14 @@
             </div>
             <div class="form-group">
                 <label for="senha_repetida">Repita a Senha</label>
-                <input id="senha_repetida" type="password" name="senha_repetida" class="form-control" required autocomplete="off" placeholder="Deve ser igual as duas" oninput="validaSenha(this)">
+                <input id="senha_repetida" type="password" class="form-control" required autocomplete="off" placeholder="Deve ser igual as duas" oninput="validaSenha(this)">
             </div>
             <div class="form-group">
                 <label>Nível de Acesso</label>
-                <select name="nivel_usuario" class="form-control">
-                    <option value="">Administrador</option>
-                    <option value="">Funcionário</option>
-                    <option value="">Conferente</option>
+                <select name="nivel_de_acesso" class="form-control">
+                    <option value="1">Administrador</option>
+                    <option value="2">Funcionário</option>
+                    <option value="3">Conferente</option>
                 </select>
             </div>
             <div style="text-align: right">
