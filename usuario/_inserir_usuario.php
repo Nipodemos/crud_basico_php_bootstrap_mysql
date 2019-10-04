@@ -1,5 +1,5 @@
 <?php
-$conexao = include 'conexao.php';
+$conexao = include '../conexao.php';
 
 include '../scripts/password.php';
 

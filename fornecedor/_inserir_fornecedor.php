@@ -19,6 +19,6 @@ include '../codigo_bootstrap.html';
         <div style="padding-top: 20px;"></div>
         <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar para o início</a>
         <a href="inserir_fornecedor.php" role="button" class="btn btn-sm btn-primary">Cadastrar novo Fornecedor</a>
-        <a href="listar_fornecedores.php" role="button" class="btn btn-sm btn-primary">Listar Fornecedors</a>
+        <a href="listar_fornecedores.php" role="button" class="btn btn-sm btn-primary">Listar Fornecedores</a>
     </center>
 </div>
