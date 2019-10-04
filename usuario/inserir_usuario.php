@@ -14,7 +14,10 @@
 <body>
     <div class="container" style="width: 400px; margin-top: 40px;">
         <h4>Cadastro de Usuários</h4>
-        <form action="post">
+        <div style="text-align: right;">
+            <a href="../index.php" role="button" class="btn btn-sm btn-primary">Voltar</a>
+        </div>
+        <form action="_inserir_usuario.php" method="post">
             <div class="form-group">
                 <label>Nome Completo</label>
                 <input type="text" name="nome" class="form-control" required autocomplete="off" placeholder="Digite aqui seu nome">

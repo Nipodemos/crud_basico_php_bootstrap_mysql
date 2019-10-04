@@ -3,15 +3,15 @@ $conexao = include '../conexao.php';
 
 include '../scripts/password.php';
 
-$nome             = $_POST['nome'];
-$email            = $_POST['email'];
-$senha            = $_POST['senha'];
-$nivel_de_acesso  = $_POST['nivel_de_acesso'];
-$status = 1;
-#status 1 é igual a ativo
+$nome_usuario   = $_POST['nome'];
+$email_usuario  = $_POST['email'];
+$senha_usuario  = $_POST['senha'];
+$nivel_usuario  = $_POST['nivel_de_acesso'];
+$status_usuario = 1;
+#status_usuario 1 é igual a ativo
 
 
-$sql = "INSERT INTO usuarios(nome,email,senha,nivel_de_acesso,status) values('$nome','$email',sha1('$senha'), $nivel_de_acesso, '$status');";
+$sql = "INSERT INTO usuarios(nome_usuario,email_usuario,senha_usuario,nivel_usuario,status_usuario) values('$nome_usuario','$email_usuario',sha1('$senha_usuario'), $nivel_usuario, $status_usuario);";
 
 $query = mysqli_query($conexao, $sql);
 
