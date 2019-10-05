@@ -56,7 +56,7 @@
                         </td>
                         <td>
 
-                            <a class="btn btn-danger btn-sm" style="color: black;" href="_deletar_usuario.php?id=<?php echo $id_usuario ?>&nivel=<?php echo $nivel_usuario ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                            <a class="btn btn-danger btn-sm" style="color: black;" href="_deletar_usuario.php?id=<?php echo $id_usuario ?>" role="button"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                         </td>
                     </tr>
                 <?php

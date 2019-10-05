@@ -1,3 +1,3 @@
 <?php
 
-include 'pagina_inicial.php';
+include 'login.php';

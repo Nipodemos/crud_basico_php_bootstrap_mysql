@@ -4,9 +4,10 @@ $conexao = include '../conexao.php';
 
 $id    = $_GET['id'];   // recebe o valor do atributo do formulário
 $nivel = $_GET['nivel'];  // recebe o valor do atributo do formulário
-$sql = "UPDATE 'usuarios' SET `status`=1 WHERE id_usuario=$id";
+$sql = "UPDATE usuarios SET status_usuario=1 WHERE id_usuario=$id";
 
 $query = mysqli_query($conexao, $sql);
+header("Location: aprovar_usuario.php"); //redireciona para a página de aprovação
 include '../codigo_bootstrap.html';
 ?>
 <div class="container" style="width: 600px;">

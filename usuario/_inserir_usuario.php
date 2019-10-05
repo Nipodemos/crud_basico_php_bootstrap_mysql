@@ -1,8 +1,6 @@
 <?php
 $conexao = include '../conexao.php';
 
-include '../scripts/password.php';
-
 $nome_usuario   = $_POST['nome'];
 $email_usuario  = $_POST['email'];
 $senha_usuario  = $_POST['senha'];

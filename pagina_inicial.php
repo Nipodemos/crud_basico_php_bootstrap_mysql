@@ -10,6 +10,14 @@
 </head>
 
 <body>
+
+
+    <?php
+    $logado = $_SESSION['usuario'];
+    if (!isset($logado)) {
+        header("Location: login.php");
+    }
+    ?>
     <div class="container" style="margin: 100px;">
         <div class="row">
             <div class="col-sm-6">
