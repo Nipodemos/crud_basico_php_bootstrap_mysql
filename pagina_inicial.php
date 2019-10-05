@@ -85,6 +85,15 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-6" style="margin-top: 30px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Aprovar Usuário</h5>
+                        <p class="card-text">Arpovação de usuários inativos</p>
+                        <a href="usuario/aprovar_usuario.php" class="btn btn-primary">Aprovar</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
