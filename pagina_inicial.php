@@ -11,25 +11,42 @@
 
 <body>
 
-
     <?php
-    $logado = $_SESSION['usuario'];
-    if (!isset($logado)) {
+    const ADMINISTRADOR = 1;
+    const FUNCIONARIO   = 2;
+    const CONFERENTE    = 3;
+
+
+    session_start();
+    $usuario = $_SESSION['usuario'];
+    if (!isset($usuario)) {
         header("Location: login.php");
     }
+
+    $conexao = include 'conexao.php';
+    $sql = "SELECT nivel_usuario FROM usuarios where email_usuario='$usuario' AND status_usuario=1;";
+    $query = mysqli_query($conexao, $sql);
+
+    $array = mysqli_fetch_array($query);
+    $nivel = $array['nivel_usuario'];
     ?>
     <div class="container" style="margin: 100px;">
+
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Adicionar Produto</h5>
-                        <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
-                        <a href="produto/inserir_produto.php" class="btn btn-primary">Cadastrar</a>
+            <?php
+            if ($nivel == ADMINISTRADOR || $nivel == FUNCIONARIO) {
+                ?>
+                <div class="col-sm-6" style="margin-top: 30px;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Adicionar Produto</h5>
+                            <p class="card-text">Opção para adicionar produtos em nosso estoque.</p>
+                            <a href="produto/inserir_produto.php" class="btn btn-primary">Cadastrar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
+            <?php } ?>
+            <div class="col-sm-6" style="margin-top: 30px;">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Lista de Produtos</h5>
